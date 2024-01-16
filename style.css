@@ -1,0 +1,20 @@
+.poppins-font {
+    font-family: 'Poppins', sans-serif;;
+}
+
+.bg-color-transparent {
+    background-color: transparent;
+    border: none;
+}
+
+.btn-transparent {
+    background-color: transparent;
+    color: black;
+    border: solid 1px #007bff;
+}
+
+.btn-transparent:hover {
+    background-color: #007bff;
+    color: white;
+    border: solid 1px #007bff;
+}
