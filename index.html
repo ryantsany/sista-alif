@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="poppins-font">
+    
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark p-3">
         <!-- Navbar Brand-->
         <a class="navbar-brand ps-3 poppins-font" href="index.html">Sistem Informasi Seminar Tugas Akhir - SISTA</a>
@@ -32,16 +33,22 @@
                     <li><a class="dropdown-item" href="#!">Settings</a></li>
                     <li><a class="dropdown-item" href="#!">Activity Log</a></li>
                     <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item" href="#!">Logout</a></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
                 </ul>
             </li>
         </ul>
     </nav>
     <div class="page-header my-5 mx-5">
+        <strong><h2 class="mb-5 font-weight-bold" id="welcome"></h2></strong>
         <h4>
             Alur seminar / Tugas akhir
         </h4>
-        
+
     </div>
+    <script>
+        let welcomeText = document.getElementById("welcome")
+        let user = localStorage.getItem('userLoggedIn')
+        welcomeText.innerHTML = `Selamat datang, ${user[0].toUpperCase()}${user.slice(1)}`
+    </script>
 </body>
 </html>

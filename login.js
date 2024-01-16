@@ -1,5 +1,3 @@
-// import {savedUsername, savedPassword} from "./register"
-
 function login(){
     let userName = document.getElementById("inputUsername")
     let password = document.getElementById("inputPassword")
@@ -7,6 +5,8 @@ function login(){
 
     let listUsername = localStorage.getItem('savedUsername')
     let listPassword = localStorage.getItem('savedPassword')
+
+    localStorage.setItem('userLoggedIn', userName.value)
     // let listUsername = JSON.parse(localStorage.getItem('savedUsername'))
     // let listPassword = JSON.parse(localStorage.getItem('savedPassword'))
     
